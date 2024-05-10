@@ -5,9 +5,17 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Debug with gdb",
+      "type": "gdb",
+      "request": "launch",
+      "target": "${workspaceFolder}/build/hello",
+      "cwd": "${workspaceRoot}",
+      "valuesFormatting": "parseText"
+    },
+    {
+      "name": "Debug with lldb",
       "type": "lldb",
       "request": "launch",
-      "name": "Debug",
       "program": "${workspaceFolder}/build/hello",
       "args": [],
       "cwd": "${workspaceFolder}"
